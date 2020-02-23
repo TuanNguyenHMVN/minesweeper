@@ -72,7 +72,7 @@ class App extends Component {
   onShowResult = (status, time) => {
     this.setState({
       modalVisible: true,
-      modalContent: status === 'Win' ? `You won game in: ${time}` : `You lost game in: ${time}`});
+      modalContent: status === 'Win' ? `You won the game in: ${time}` : `You lost the game in: ${time}`});
   }
 
   onReplay = () => {

@@ -35,7 +35,6 @@ export class Result extends React.Component {
         return (
             
             <div>
-                { content }
                 <Modal
                     visible={visible}
                     title="Result"
