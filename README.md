@@ -1,4 +1,4 @@
-# Turtle Card
+# Minesweeper
 ### Description:
 * A web application that allow user play mine sweeper
 * Only support 1 player
