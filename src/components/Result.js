@@ -25,8 +25,9 @@ export class Result extends React.Component {
         this.props.onReplay();
     };
 
-    onViewBoard = () => {
+    onBackToHome = () => {
         this.setState({ visible: false });
+        this.props.onBackToHome();
     };
     
     render(){
@@ -48,7 +49,7 @@ export class Result extends React.Component {
                             </Button>          
                         </Col>
                         <Col key='viewboard' span={6}>
-                            <Button key="submit" type="primary" loading={loading} onClick={this.onViewBoard}>
+                            <Button key="submit" type="primary" loading={loading} onClick={this.onBackToHome}>
                                 Home Page
                             </Button>               
                         </Col>

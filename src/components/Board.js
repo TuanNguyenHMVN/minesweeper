@@ -210,7 +210,7 @@ export class Board extends React.Component {
                 </Row>
                 <Row type="flex" justify="center">
                     <Col span={this.props.mines.length === 10 ? 6 : 10}>
-                    { this.renderBoard(this.state.boardData) }
+                        { this.renderBoard(this.state.boardData) }
                     </Col>
                 </Row>
                 

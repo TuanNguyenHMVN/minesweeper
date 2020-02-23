@@ -45,7 +45,7 @@ class App extends Component {
           </Col>
         </Row>
         <Result ref={this.modal} visible={modalVisible} content={modalContent}
-          onReplay={this.onReplay}></Result>
+          onReplay={this.onReplay} onBackToHome={this.onBackToHome}></Result>
       </React.Fragment>
     );
   }
@@ -82,6 +82,15 @@ class App extends Component {
     });
     this.onSelectLevel(this.state.selectedLevel);
   }
+
+  onBackToHome = () => {
+    this.props.clearMines();
+    this.setState({
+      modalVisible: false,
+      modalContent: '',
+      selectedLevel: ''
+    });
+  }
 }
 
 
@@ -97,6 +106,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
   return {
     getMines: (lv) => dispatch({ type: 'GET_MINES', lv }),
+    clearMines: () => dispatch({ type: 'CLEAR_MINES'})
   };
 };
 
