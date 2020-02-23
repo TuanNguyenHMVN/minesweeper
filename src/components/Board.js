@@ -202,7 +202,7 @@ export class Board extends React.Component {
                 <Row type="flex" justify="center">
                     <Col span={12}>
                         <div className="game-info">
-                            <span className="info">Time</span>
+                            <span className="info">Play Time</span>
                             <h1><Clock ref={this.clock} /></h1>
 
                         </div>
