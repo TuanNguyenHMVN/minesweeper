@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/minesweeper/static/css/main.a82a8b66.chunk.css"
   },
   {
-    "revision": "885edf945824a42182c46ff546914c08",
+    "revision": "f72a946c94d7c60391e87feaaaa9d2ac",
     "url": "/minesweeper/index.html"
   }
 ];
